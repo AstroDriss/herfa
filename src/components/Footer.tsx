@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer>
@@ -17,16 +19,16 @@ const Footer = () => {
           <nav>
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a href="/#about">About</a>
+                <Link href="/#about">About</Link>
               </li>
               <li>
-                <a href="/#services">Services</a>
+                <Link href="/#services">Services</Link>
               </li>
               <li>
-                <a href="/contact.html">Contact</a>
+                <Link href="/contact.html">Contact</Link>
               </li>
             </ul>
           </nav>

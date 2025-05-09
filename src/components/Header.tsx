@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
     <header>
       <div className="wrapper">
-        <a href="/">
+        <Link href="/">
           <img
             src="/herfa.svg"
             alt=""
@@ -10,26 +12,26 @@ const Header = () => {
             height="46"
             title="herfa - home"
           />
-        </a>
+        </Link>
 
         <nav>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/#about">About</a>
+              <Link href="/#about">About</Link>
             </li>
             <li>
-              <a href="/#services">Services</a>
+              <Link href="/#services">Services</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
 
-        <a href="/app">Explore →</a>
+        <Link href="/app">Explore →</Link>
       </div>
     </header>
   );
