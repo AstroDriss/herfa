@@ -19,16 +19,16 @@ const Footer = () => {
           <nav>
             <ul>
               <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
                 <Link href="/#about">About</Link>
               </li>
               <li>
-                <Link href="/#services">Services</Link>
+                <Link href="/ideas">ideas</Link>
               </li>
               <li>
-                <Link href="/contact.html">Contact</Link>
+                <Link href="/contact">Contact</Link>
+              </li>
+              <li>
+                <Link href="/pricing">Pricing</Link>
               </li>
             </ul>
           </nav>
@@ -36,7 +36,11 @@ const Footer = () => {
           {/* Social media */}
           <ul className="social-media">
             <li>
-              <a target="_blank" title="tiktok" href="https://www.tiktok.com">
+              <Link
+                target="_blank"
+                title="tiktok"
+                href="https://www.tiktok.com"
+              >
                 <svg
                   width="20px"
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,10 +51,10 @@ const Footer = () => {
                     d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 target="_blank"
                 title="instagram"
                 href="https://www.instagram.com"
@@ -80,10 +84,10 @@ const Footer = () => {
                   29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 target="_blank"
                 title="facebook"
                 href="https://www.facebook.com"
@@ -101,7 +105,7 @@ const Footer = () => {
                   0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

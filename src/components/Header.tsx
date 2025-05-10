@@ -1,8 +1,9 @@
 import Link from "next/link";
 
+// TODO: make it responsive
 const Header = () => {
   return (
-    <header>
+    <header className="z-50">
       <div className="wrapper">
         <Link href="/">
           <img
@@ -17,13 +18,13 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/ideas">Ideas</Link>
             </li>
             <li>
-              <Link href="/#about">About</Link>
+              <Link href="/professionals">Profs</Link>
             </li>
             <li>
-              <Link href="/#services">Services</Link>
+              <Link href="/pricing">Pricing</Link>
             </li>
             <li>
               <Link href="/contact">Contact</Link>
@@ -31,7 +32,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <Link href="/app">Explore →</Link>
+        <Link href="/coming-soon">Register →</Link>
       </div>
     </header>
   );
