@@ -1,7 +1,13 @@
+"use client";
 import Link from "next/link";
+import { Button } from "./ui/button";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 // TODO: make it responsive
 const Header = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <header className="z-50">
       <div className="wrapper">
@@ -15,7 +21,20 @@ const Header = () => {
           />
         </Link>
 
-        <nav>
+        <Button
+          className="md:hidden"
+          aria-label="menu"
+          variant="ghost"
+          onClick={() => setOpen(!isOpen)}
+        >
+          {isOpen ? (
+            <X className="w-10! h-10!" />
+          ) : (
+            <Menu className="w-10! h-10!" />
+          )}
+        </Button>
+
+        <nav className={`${isOpen ? "open" : ""}`}>
           <ul>
             <li>
               <Link href="/ideas">Ideas</Link>
@@ -29,10 +48,17 @@ const Header = () => {
             <li>
               <Link href="/contact">Contact</Link>
             </li>
+            <li>
+              <Link className="md:hidden" href="/coming-soon">
+                Register →
+              </Link>
+            </li>
           </ul>
         </nav>
 
-        <Link href="/coming-soon">Register →</Link>
+        <Link className="hidden md:block" href="/coming-soon">
+          Register →
+        </Link>
       </div>
     </header>
   );

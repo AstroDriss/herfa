@@ -1,6 +1,6 @@
 const Stats = () => {
   return (
-    <section className="section" id="stats">
+    <section className="section gap-10 md:gap-3" id="stats">
       <div>
         <h2>250+</h2>
         <p>Artisans inscrits</p>
