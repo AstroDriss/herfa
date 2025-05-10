@@ -383,10 +383,10 @@ export default function PricingPage() {
                   ))}
                 </div>
                 <p className="italic mb-6">
-                  "Since upgrading to the Professional plan, my visibility has
-                  increased dramatically. I'm getting more inquiries and sales
-                  than ever before. The analytics help me understand what
-                  customers are looking for."
+                  &ldquo;Since upgrading to the Professional plan, my visibility
+                  has increased dramatically. I&apos;m getting more inquiries
+                  and sales than ever before. The analytics help me understand
+                  what customers are looking for.&rdquo;
                 </p>
                 <div className="flex items-center">
                   <div className="h-10 w-10 rounded-full overflow-hidden relative mr-3">
@@ -423,10 +423,10 @@ export default function PricingPage() {
                   ))}
                 </div>
                 <p className="italic mb-6">
-                  "The Master plan has been a game-changer for my woodworking
-                  business. The commission-free sales alone paid for the
-                  subscription in the first month. The dedicated account manager
-                  has been incredibly helpful."
+                  &ldquo;The Master plan has been a game-changer for my
+                  woodworking business. The commission-free sales alone paid for
+                  the subscription in the first month. The dedicated account
+                  manager has been incredibly helpful.&rdquo;
                 </p>
                 <div className="flex items-center">
                   <div className="h-10 w-10 rounded-full overflow-hidden relative mr-3">
@@ -463,10 +463,10 @@ export default function PricingPage() {
                   ))}
                 </div>
                 <p className="italic mb-6">
-                  "I started with the Basic plan when I was just beginning my
-                  jewelry business. As I grew, I upgraded to Professional. The
-                  platform has been instrumental in helping me build my brand
-                  and connect with customers."
+                  &ldquo;I started with the Basic plan when I was just beginning
+                  my jewelry business. As I grew, I upgraded to Professional.
+                  The platform has been instrumental in helping me build my
+                  brand and connect with customers.&rdquo;
                 </p>
                 <div className="flex items-center">
                   <div className="h-10 w-10 rounded-full overflow-hidden relative mr-3">
@@ -502,8 +502,8 @@ export default function PricingPage() {
                 </AccordionTrigger>
                 <AccordionContent>
                   Yes, you can upgrade or downgrade your plan at any time. When
-                  upgrading, you'll be charged the prorated difference for the
-                  remainder of your billing cycle. When downgrading, the new
+                  upgrading, you&apos;ll be charged the prorated difference for
+                  the remainder of your billing cycle. When downgrading, the new
                   rate will apply at the start of your next billing cycle.
                 </AccordionContent>
               </AccordionItem>
@@ -546,9 +546,9 @@ export default function PricingPage() {
                 </AccordionTrigger>
                 <AccordionContent>
                   Yes, you can cancel your subscription at any time from your
-                  account settings. If you cancel, you'll still have access to
-                  your plan features until the end of your current billing
-                  cycle. We don't offer refunds for partial months.
+                  account settings. If you cancel, you&apos;ll still have access
+                  to your plan features until the end of your current billing
+                  cycle. We don&apos;t offer refunds for partial months.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
