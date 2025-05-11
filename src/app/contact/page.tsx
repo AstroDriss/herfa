@@ -34,7 +34,7 @@ const ContactPage = () => {
             ></Textarea>
           </div>
           <Button>
-            Send Message
+            Envoyer le Message
             <Send />
           </Button>
         </form>

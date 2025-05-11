@@ -21,11 +21,11 @@ export default function ProfessionalsPage() {
         <div className=" px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Find Skilled Artisans
+              Trouvez des Artisans Qualifiés
             </h1>
             <p className="text-xl text-gray-600">
-              Connect with talented professionals who create beautiful
-              handcrafted items
+              Connectez-vous avec des professionnels talentueux qui créent de
+              magnifiques objets artisanaux.
             </p>
           </div>
           <div className="max-w-3xl mx-auto">
@@ -35,7 +35,7 @@ export default function ProfessionalsPage() {
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-500" />
                   <Input
                     type="search"
-                    placeholder="Search for artisans or craftspeople..."
+                    placeholder="Recherchez des artisans ou des artisans d’art..."
                     className="pl-10"
                   />
                 </div>
@@ -43,7 +43,7 @@ export default function ProfessionalsPage() {
                   <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-500" />
                   <Input
                     type="text"
-                    placeholder="Location"
+                    placeholder="Emplacement"
                     className="pl-10 w-full md:w-[200px]"
                   />
                 </div>
@@ -60,7 +60,9 @@ export default function ProfessionalsPage() {
           {/* Sidebar Filters */}
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-lg mb-4">Craft Categories</h3>
+              <h3 className="font-semibold text-lg mb-4">
+                Catégories d'Artisanat
+              </h3>
               <div className="space-y-2">
                 {professionalCategories.map((category) => (
                   <div key={category.slug} className="flex items-center">
@@ -78,14 +80,14 @@ export default function ProfessionalsPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg mb-4">Location</h3>
+              <h3 className="font-semibold text-lg mb-4">Emplacement</h3>
               <Select>
                 <SelectTrigger>
-                  <SelectValue placeholder="Select location" />
+                  <SelectValue placeholder="Sélectionnez un emplacement" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="anywhere">Anywhere</SelectItem>
-                  <SelectItem value="local">Within 50 miles</SelectItem>
+                  <SelectItem value="anywhere">N'importe où</SelectItem>
+                  <SelectItem value="local">Dans un rayon de 80 km</SelectItem>
                   <SelectItem value="national">National</SelectItem>
                   <SelectItem value="international">International</SelectItem>
                 </SelectContent>
@@ -93,7 +95,9 @@ export default function ProfessionalsPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg mb-4">Experience Level</h3>
+              <h3 className="font-semibold text-lg mb-4">
+                Niveau d'Expérience
+              </h3>
               <div className="space-y-2">
                 <div className="flex items-center">
                   <input
@@ -102,7 +106,7 @@ export default function ProfessionalsPage() {
                     className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                   />
                   <label htmlFor="master" className="ml-2 text-sm">
-                    Master Craftsperson
+                    Maître Artisan
                   </label>
                 </div>
                 <div className="flex items-center">
@@ -112,7 +116,7 @@ export default function ProfessionalsPage() {
                     className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                   />
                   <label htmlFor="journeyman" className="ml-2 text-sm">
-                    Journeyman
+                    Compagnon
                   </label>
                 </div>
                 <div className="flex items-center">
@@ -122,14 +126,14 @@ export default function ProfessionalsPage() {
                     className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                   />
                   <label htmlFor="apprentice" className="ml-2 text-sm">
-                    Apprentice
+                    Apprenti
                   </label>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg mb-4">Services Offered</h3>
+              <h3 className="font-semibold text-lg mb-4">Services Offerts</h3>
               <div className="space-y-2">
                 <div className="flex items-center">
                   <input
@@ -138,7 +142,7 @@ export default function ProfessionalsPage() {
                     className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                   />
                   <label htmlFor="custom" className="ml-2 text-sm">
-                    Custom Orders
+                    Commandes Personnalisées
                   </label>
                 </div>
                 <div className="flex items-center">
@@ -148,7 +152,7 @@ export default function ProfessionalsPage() {
                     className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                   />
                   <label htmlFor="workshops" className="ml-2 text-sm">
-                    Workshops & Classes
+                    Ateliers et Cours
                   </label>
                 </div>
                 <div className="flex items-center">
@@ -158,7 +162,7 @@ export default function ProfessionalsPage() {
                     className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                   />
                   <label htmlFor="restoration" className="ml-2 text-sm">
-                    Restoration
+                    Restauration
                   </label>
                 </div>
                 <div className="flex items-center">
@@ -175,7 +179,7 @@ export default function ProfessionalsPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg mb-4">Rating</h3>
+              <h3 className="font-semibold text-lg mb-4">Évaluation</h3>
               <div className="space-y-2">
                 {[5, 4, 3, 2, 1].map((rating) => (
                   <div key={rating} className="flex items-center">
@@ -201,31 +205,31 @@ export default function ProfessionalsPage() {
                         .map((_, i) => (
                           <Star key={i} className="h-4 w-4 text-gray-300" />
                         ))}
-                      <span className="ml-1">& Up</span>
+                      <span className="ml-1">& Plus</span>
                     </label>
                   </div>
                 ))}
               </div>
             </div>
 
-            <Button className="w-full">Apply Filters</Button>
+            <Button className="w-full">Appliquer les filtres</Button>
           </div>
 
           {/* Main Content */}
           <div className="lg:col-span-3">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold">Featured Professionals</h2>
+            <div className="flex flex-wrap justify-between items-center mb-6">
+              <h2 className="text-2xl font-bold">Professionnels en Vedette</h2>
               <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-500">Sort by:</span>
+                <span className="text-sm text-gray-500">Trier par :</span>
                 <Select defaultValue="recommended">
                   <SelectTrigger className="w-[180px]">
                     <SelectValue placeholder="Sort by" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="recommended">Recommended</SelectItem>
-                    <SelectItem value="rating">Highest Rated</SelectItem>
-                    <SelectItem value="reviews">Most Reviews</SelectItem>
-                    <SelectItem value="newest">Newest</SelectItem>
+                    <SelectItem value="recommended">Recommandé</SelectItem>
+                    <SelectItem value="rating">Note la plus élevée</SelectItem>
+                    <SelectItem value="reviews">Le plus d'avis</SelectItem>
+                    <SelectItem value="newest">Le plus récent</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -236,15 +240,13 @@ export default function ProfessionalsPage() {
                 <Card key={professional.id} className="overflow-hidden">
                   <CardContent className="p-0">
                     <div className="flex flex-col md:flex-row">
-                      <div className="md:w-1/3 relative">
-                        <div className="aspect-[4/3] md:h-full relative">
-                          <Image
-                            src={professional.coverImage || "/placeholder.svg"}
-                            alt={professional.name}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
+                      <div className="h-full md:w-1/3 px-4">
+                        <Image
+                          src={professional.coverImage || "/placeholder.svg"}
+                          alt={professional.name}
+                          fill
+                          className="object-cover aspect-square md:aspect-auto rounded-md static!"
+                        />
                       </div>
                       <div className="p-6 md:w-2/3">
                         <div className="flex justify-between items-start">
@@ -290,23 +292,7 @@ export default function ProfessionalsPage() {
                           {professional.description}
                         </p>
 
-                        <div className="grid grid-cols-4 gap-2 mb-4">
-                          {professional.portfolioImages.map((image, index) => (
-                            <div
-                              key={index}
-                              className="aspect-square relative rounded overflow-hidden"
-                            >
-                              <Image
-                                src={image || "/placeholder.svg"}
-                                alt={`Portfolio ${index + 1}`}
-                                fill
-                                className="object-cover"
-                              />
-                            </div>
-                          ))}
-                        </div>
-
-                        <div className="flex justify-between items-center">
+                        <div className="flex justify-between items-center gap-3">
                           <div>
                             <span className="text-sm font-medium">
                               Services:
@@ -315,8 +301,8 @@ export default function ProfessionalsPage() {
                               {professional.services.join(", ")}
                             </span>
                           </div>
-                          <Link href={`/professionals/${professional.id}`}>
-                            <Button>View Profile</Button>
+                          <Link href={`/coming-soon`}>
+                            <Button>Voir le profil</Button>
                           </Link>
                         </div>
                       </div>
@@ -328,7 +314,7 @@ export default function ProfessionalsPage() {
 
             <div className="mt-8 flex justify-center">
               <Button variant="outline" className="mr-2">
-                Previous
+                Précédent
               </Button>
               <Button variant="outline" className="mx-1">
                 1
@@ -340,7 +326,7 @@ export default function ProfessionalsPage() {
                 3
               </Button>
               <Button variant="outline" className="ml-2">
-                Next
+                Suivant
               </Button>
             </div>
           </div>
@@ -351,7 +337,7 @@ export default function ProfessionalsPage() {
       <section className="py-12">
         <div className=" px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-8 text-center">
-            Browse Professionals by Category
+            Parcourir les Professionnels par Catégorie
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {professionalCategories.map((category) => (
@@ -384,15 +370,15 @@ export default function ProfessionalsPage() {
         <div className=" px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Are You a Skilled Artisan?
+              Êtes-vous un Artisan Qualifié ?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Join our community of craftspeople and connect with customers who
-              appreciate handmade quality
+              Rejoignez notre communauté d'artisans et connectez-vous avec des
+              clients qui apprécient la qualité artisanale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" size="lg" asChild>
-                <Link href="/pricing">Join as a Professional</Link>
+                <Link href="/pricing">Rejoindre en tant que Professionnel</Link>
               </Button>
             </div>
           </div>
@@ -405,74 +391,74 @@ export default function ProfessionalsPage() {
 // Sample data
 const professionalCategories = [
   {
-    name: "Woodworkers",
-    slug: "woodworkers",
+    name: "Menuisiers",
+    slug: "menuisiers",
     icon: "/images/woodworker.jpg",
     count: 245,
   },
   {
-    name: "Ceramicists",
-    slug: "ceramicists",
+    name: "Céramistes",
+    slug: "ceramistes",
     icon: "/images/ceramicists.jpg",
     count: 189,
   },
   {
-    name: "Textile Artists",
-    slug: "textile-artists",
+    name: "Artistes Textiles",
+    slug: "artistes-textiles",
     icon: "/images/textile.jpg",
     count: 176,
   },
   {
-    name: "Metalsmiths",
-    slug: "metalsmiths",
+    name: "Forgerons",
+    slug: "forgerons",
     icon: "/images/metalsmiths.jpg",
     count: 132,
   },
   {
-    name: "Leatherworkers",
-    slug: "leatherworkers",
+    name: "Maroquiniers",
+    slug: "maroquiniers",
     icon: "/images/leatherworkers.jpg",
     count: 98,
   },
   {
-    name: "Jewelers",
-    slug: "jewelers",
+    name: "Bijoutiers",
+    slug: "bijoutiers",
     icon: "/images/jewelers.jpg",
     count: 215,
   },
   {
-    name: "Glass Artists",
-    slug: "glass-artists",
+    name: "Verriers",
+    slug: "verriers",
     icon: "/images/glass-artists.jpg",
     count: 87,
   },
   {
-    name: "Paper Artists",
-    slug: "paper-artists",
+    name: "Artistes Papier",
+    slug: "artistes-papier",
     icon: "/images/paper-artists.jpg",
     count: 64,
   },
   {
-    name: "Stone Carvers",
-    slug: "stone-carvers",
+    name: "Sculpteurs sur Pierre",
+    slug: "sculpteurs-pierre",
     icon: "/images/stone-carvers.jpg",
     count: 42,
   },
   {
-    name: "Basket Weavers",
-    slug: "basket-weavers",
+    name: "Vanniers",
+    slug: "vanniers",
     icon: "/images/basket-weavers.jpg",
     count: 38,
   },
   {
-    name: "Printmakers",
-    slug: "printmakers",
+    name: "Graveurs",
+    slug: "graveurs",
     icon: "/images/printmakers.jpg",
     count: 76,
   },
   {
-    name: "Bookbinders",
-    slug: "bookbinders",
+    name: "Relieurs",
+    slug: "relieurs",
     icon: "/images/bookbinders.jpg",
     count: 29,
   },
@@ -481,74 +467,58 @@ const professionalCategories = [
 const professionals = [
   {
     id: "1",
-    name: "Thomas Woodcraft Studio",
-    location: "Portland, OR",
+    name: "Atelier Bois de Kamal",
+    location: "Marrakech, Maroc",
     rating: 5,
     reviews: 48,
-    specialties: ["Custom Furniture", "Cabinetry", "Wood Sculpture"],
+    specialties: ["Meubles sur Mesure", "Ébénisterie", "Sculpture sur Bois"],
     description:
-      "Master woodworker with over 20 years of experience crafting bespoke furniture and wooden art pieces. Specializing in sustainable hardwoods and traditional joinery techniques.",
-    coverImage: "/placeholder.svg?height=400&width=600",
-    portfolioImages: [
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-    ],
-    services: ["Custom Orders", "Restoration", "Consultation"],
+      "Maître menuisier avec plus de 20 ans d'expérience dans la création de meubles sur mesure et d'œuvres d'art en bois. Spécialisé dans les bois durables et les techniques traditionnelles d'assemblage.",
+    coverImage: "/images/profs/1.jpg",
+    services: ["Commandes Personnalisées", "Restauration", "Consultation"],
   },
   {
     id: "2",
-    name: "Clay Creations by Sarah",
-    location: "Austin, TX",
+    name: "Poteries de Fatima",
+    location: "Fès, Maroc",
     rating: 4,
     reviews: 36,
-    specialties: ["Functional Pottery", "Ceramic Sculpture", "Dinnerware"],
-    description:
-      "Contemporary ceramicist creating both functional and decorative pieces. Each item is handmade using traditional wheel-throwing and hand-building techniques with custom glazes.",
-    coverImage: "/placeholder.svg?height=400&width=600",
-    portfolioImages: [
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
+    specialties: [
+      "Poterie Fonctionnelle",
+      "Sculpture Céramique",
+      "Arts de la Table",
     ],
-    services: ["Custom Orders", "Workshops", "Commissions"],
+    description:
+      "Céramiste contemporaine créant des pièces fonctionnelles et décoratives. Chaque objet est fait à la main en utilisant des techniques traditionnelles de tournage et de façonnage avec des émaux personnalisés.",
+    coverImage: "/images/profs/2.jpg",
+    services: ["Commandes Personnalisées", "Ateliers", "Commissions"],
   },
   {
     id: "3",
-    name: "Fiber & Thread Collective",
-    location: "Seattle, WA",
+    name: "Collectif Fil & Tissu",
+    location: "Essaouira, Maroc",
     rating: 5,
     reviews: 29,
-    specialties: ["Handwoven Textiles", "Natural Dyeing", "Tapestry"],
-    description:
-      "A textile studio specializing in handwoven home goods and wearables. All pieces are created using traditional looms and natural fibers, with an emphasis on sustainable practices.",
-    coverImage: "/placeholder.svg?height=400&width=600",
-    portfolioImages: [
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
+    specialties: [
+      "Textiles Tissés à la Main",
+      "Teinture Naturelle",
+      "Tapisserie",
     ],
-    services: ["Custom Orders", "Workshops", "Collaboration"],
+    description:
+      "Un atelier textile spécialisé dans les articles ménagers et vestimentaires tissés à la main. Toutes les pièces sont créées à l'aide de métiers à tisser traditionnels et de fibres naturelles, avec un accent sur les pratiques durables.",
+    coverImage: "/images/profs/3.jpg",
+    services: ["Commandes Personnalisées", "Ateliers", "Collaboration"],
   },
   {
     id: "4",
-    name: "Forge & Anvil Metalworks",
-    location: "Denver, CO",
+    name: "Forge & Enclume de Hassan",
+    location: "Casablanca, Maroc",
     rating: 5,
     reviews: 42,
-    specialties: ["Architectural Ironwork", "Decorative Metalwork", "Knives"],
+    specialties: ["Ferronnerie Architecturale", "Métal Décoratif", "Couteaux"],
     description:
-      "Traditional blacksmith creating hand-forged metal pieces for home and garden. Specializing in both functional and decorative items using time-honored techniques.",
-    coverImage: "/placeholder.svg?height=400&width=600",
-    portfolioImages: [
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=200",
-    ],
-    services: ["Custom Orders", "Restoration", "Installation"],
+      "Forgeron traditionnel créant des pièces en métal forgées à la main pour la maison et le jardin. Spécialisé dans les articles fonctionnels et décoratifs utilisant des techniques ancestrales.",
+    coverImage: "/images/profs/4.jpg",
+    services: ["Commandes Personnalisées", "Restauration", "Installation"],
   },
 ];
