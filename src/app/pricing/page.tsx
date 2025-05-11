@@ -400,7 +400,7 @@ export default function PricingPage() {
                 <div className="flex items-center">
                   <div className="h-10 w-10 rounded-full overflow-hidden relative mr-3">
                     <Image
-                      src="/placeholder.svg?height=40&width=40"
+                      src="/images/profiles/clay.png"
                       alt="Amina Benali"
                       fill
                       className="object-cover"
@@ -440,7 +440,7 @@ export default function PricingPage() {
                 <div className="flex items-center">
                   <div className="h-10 w-10 rounded-full overflow-hidden relative mr-3">
                     <Image
-                      src="/placeholder.svg?height=40&width=40"
+                      src="/images/profiles/man.jpg"
                       alt="Youssef Alami"
                       fill
                       className="object-cover"
@@ -481,7 +481,7 @@ export default function PricingPage() {
                 <div className="flex items-center">
                   <div className="h-10 w-10 rounded-full overflow-hidden relative mr-3">
                     <Image
-                      src="/placeholder.svg?height=40&width=40"
+                      src="/images/jewelers.jpg"
                       alt="Nadia Tazi"
                       fill
                       className="object-cover"

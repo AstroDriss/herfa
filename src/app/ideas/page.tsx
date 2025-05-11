@@ -12,19 +12,19 @@ export default function IdeasPage() {
       <section className="relative h-[400px] w-full">
         <Image
           src="/images/ideas/cover.jpg"
-          alt="Handcrafted items showcase"
+          alt="herfa items showcase"
           fill
           className="object-cover brightness-75 rounded-2xl"
           priority
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">
-            Discover Handcrafted Inspiration
+            Discover herfa Inspiration
           </h1>
           <div className="w-full max-w-md relative">
             <Input
               type="search"
-              placeholder="Search for ideas, products, or artisans..."
+              placeholder="Rechercher des idées, des produits ou des artisans..."
               className="pl-10 pr-4 py-6 rounded-full bg-white/90 text-black"
             />
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-500" />
@@ -34,7 +34,9 @@ export default function IdeasPage() {
 
       {/* Browse Categories */}
       <section className="py-12  px-4 md:px-6">
-        <h2 className="text-3xl font-bold mb-8">Browse Ideas by Category</h2>
+        <h2 className="text-3xl font-bold mb-8">
+          Parcourir les idées par catégorie
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {categories.map((category) => (
             <Link
@@ -62,13 +64,13 @@ export default function IdeasPage() {
       {/* Featured Ideas */}
       <section className="py-12">
         <div className=" px-4 md:px-6">
-          <h2 className="text-3xl font-bold mb-8">Featured Ideas</h2>
+          <h2 className="text-3xl font-bold mb-8">Idées à la une</h2>
           <Tabs defaultValue="popular" className="w-full">
             <TabsList className="mb-8">
-              <TabsTrigger value="popular">Popular</TabsTrigger>
-              <TabsTrigger value="new">New & Notable</TabsTrigger>
-              <TabsTrigger value="seasonal">Seasonal</TabsTrigger>
-              <TabsTrigger value="sustainable">Sustainable</TabsTrigger>
+              <TabsTrigger value="popular">Populaires</TabsTrigger>
+              <TabsTrigger value="new">Nouvelles & Remarquables</TabsTrigger>
+              <TabsTrigger value="seasonal">Saisonnières</TabsTrigger>
+              <TabsTrigger value="sustainable">Durables</TabsTrigger>
             </TabsList>
             <TabsContent value="popular" className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -125,27 +127,27 @@ export default function IdeasPage() {
                 ))}
               </div>
               <div className="flex justify-center">
-                <Button variant="outline">Load More Ideas</Button>
+                <Button variant="outline">Charger plus d'idées</Button>
               </div>
             </TabsContent>
             <TabsContent value="new">
               <div className="text-center py-12">
                 <p className="text-gray-500">
-                  New and notable handcrafted ideas coming soon!
+                  De nouvelles idées Herfa remarquables arrivent bientôt !
                 </p>
               </div>
             </TabsContent>
             <TabsContent value="seasonal">
               <div className="text-center py-12">
                 <p className="text-gray-500">
-                  Seasonal handcrafted ideas coming soon!
+                  Des idées Herfa saisonnières arrivent bientôt !
                 </p>
               </div>
             </TabsContent>
             <TabsContent value="sustainable">
               <div className="text-center py-12">
                 <p className="text-gray-500">
-                  Sustainable handcrafted ideas coming soon!
+                  Des idées Herfa durables arrivent bientôt !
                 </p>
               </div>
             </TabsContent>
@@ -203,7 +205,7 @@ const categories = [
 const featuredIdeas = [
   {
     id: "1",
-    title: "Handcrafted Oak Dining Table",
+    title: "herfa Oak Dining Table",
     category: "Woodworking",
     image: "/images/ideas/table.jpeg",
     artisanName: "Thomas Woodcraft",
