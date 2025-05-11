@@ -245,7 +245,7 @@ export default function ProfessionalsPage() {
                           src={professional.coverImage || "/placeholder.svg"}
                           alt={professional.name}
                           fill
-                          className="object-cover aspect-square md:aspect-auto rounded-md static!"
+                          className="object-cover mx-4 aspect-square md:aspect-auto rounded-md static!"
                         />
                       </div>
                       <div className="p-6 md:w-2/3">

@@ -52,12 +52,12 @@ export default function PricingPage() {
               </TabsList>
               <TabsContent value="monthly">
                 <div className="text-sm text-gray-500 mt-2">
-                  Pay monthly, cancel anytime
+                  Payez chaque mois, annulez à tout moment
                 </div>
               </TabsContent>
               <TabsContent value="annually">
                 <div className="text-sm text-gray-500 mt-2">
-                  Pay annually, get 2 months free
+                  Paiement annuel, obtenez 2 mois gratuits
                 </div>
               </TabsContent>
             </Tabs>
@@ -72,54 +72,54 @@ export default function PricingPage() {
             {/* Basic Plan */}
             <Card className="border-2 border-gray-200 flex flex-col">
               <CardHeader className="pb-8">
-                <CardTitle className="text-2xl">Basic</CardTitle>
+                <CardTitle className="text-2xl">Basique</CardTitle>
                 <CardDescription>
-                  Perfect for artisans just getting started
+                  Parfait pour les artisans débutants
                 </CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$0</span>
-                  <span className="text-gray-500 ml-2">/month</span>
+                  <span className="text-4xl font-bold">0MAD</span>
+                  <span className="text-gray-500 ml-2">/mois</span>
                 </div>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Basic profile listing</span>
+                    <span>Profil de base</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Up to 10 portfolio items</span>
+                    <span>Jusqu&apos;à 10 éléments de portfolio</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Standard search visibility</span>
+                    <span>Visibilité standard dans les recherches</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Basic analytics</span>
+                    <span>Analyses de base</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Email support</span>
+                    <span>Support par email</span>
                   </li>
                   <li className="flex items-start text-gray-400">
                     <X className="h-5 w-5 text-gray-300 mr-2 shrink-0 mt-0.5" />
-                    <span>Featured in category listings</span>
+                    <span>Mise en avant dans les catégories</span>
                   </li>
                   <li className="flex items-start text-gray-400">
                     <X className="h-5 w-5 text-gray-300 mr-2 shrink-0 mt-0.5" />
-                    <span>Custom shop URL</span>
+                    <span>URL de boutique personnalisée</span>
                   </li>
                   <li className="flex items-start text-gray-400">
                     <X className="h-5 w-5 text-gray-300 mr-2 shrink-0 mt-0.5" />
-                    <span>Commission-free sales</span>
+                    <span>Visibilité sur les réseaux sociaux</span>
                   </li>
                 </ul>
               </CardContent>
               <CardFooter>
                 <Button className="w-full" asChild>
-                  <Link href="/coming-soon">Get Started</Link>
+                  <Link href="coming-soon">Commencer</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -127,57 +127,59 @@ export default function PricingPage() {
             {/* Pro Plan */}
             <Card className="border-2 border-primary relative flex flex-col">
               <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2">
-                <Badge className="bg-primary text-white">Most Popular</Badge>
+                <Badge className="bg-primary text-white">
+                  Le Plus Populaire
+                </Badge>
               </div>
               <CardHeader className="pb-8">
-                <CardTitle className="text-2xl">Professional</CardTitle>
+                <CardTitle className="text-2xl">Professionnel</CardTitle>
                 <CardDescription>
-                  For established artisans looking to grow
+                  Pour les artisans établis qui cherchent à se développer
                 </CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$29</span>
-                  <span className="text-gray-500 ml-2">/month</span>
+                  <span className="text-4xl font-bold">99MAD</span>
+                  <span className="text-gray-500 ml-2">/mois</span>
                 </div>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Enhanced profile with story section</span>
+                    <span>Profil amélioré avec section histoire</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Up to 50 portfolio items</span>
+                    <span>Jusqu&apos;à 50 éléments de portfolio</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Priority search placement</span>
+                    <span>Placement prioritaire dans les recherches</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Advanced analytics and insights</span>
+                    <span>Analyses et insights avancés</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Priority email & chat support</span>
+                    <span>Support prioritaire par email et chat</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Featured in category listings</span>
+                    <span>Mise en avant dans les catégories</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Custom shop URL</span>
+                    <span>URL de boutique personnalisée</span>
                   </li>
                   <li className="flex items-start text-gray-400">
                     <X className="h-5 w-5 text-gray-300 mr-2 shrink-0 mt-0.5" />
-                    <span>Commission-free sales</span>
+                    <span>Visibilité sur les réseaux sociaux</span>
                   </li>
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full">
-                  <Link href="/coming-soon">Get Started</Link>
+                <Button className="w-full" asChild>
+                  <Link href="coming-soon">Commencer</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -185,54 +187,57 @@ export default function PricingPage() {
             {/* Master Plan */}
             <Card className="border-2 border-gray-200 flex flex-col">
               <CardHeader className="pb-8">
-                <CardTitle className="text-2xl">Master</CardTitle>
+                <CardTitle className="text-2xl">Maître</CardTitle>
                 <CardDescription>
-                  For master craftspeople and studios
+                  Pour les maîtres artisans et les ateliers
                 </CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$79</span>
-                  <span className="text-gray-500 ml-2">/month</span>
+                  <span className="text-4xl font-bold">149MAD</span>
+                  <span className="text-gray-500 ml-2">/mois</span>
                 </div>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Premium profile with video showcase</span>
+                    <span>Profil premium avec présentation vidéo</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Unlimited portfolio items</span>
+                    <span>Éléments de portfolio illimités</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Top search placement</span>
+                    <span>Placement optimal dans les recherches</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Comprehensive analytics dashboard</span>
+                    <span>Tableau de bord d&apos;analyses complet</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Dedicated account manager</span>
+                    <span>Gestionnaire de compte dédié</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Featured in homepage & category listings</span>
+                    <span>
+                      Mise en avant sur la page d&apos;accueil et dans les
+                      catégories
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Custom shop URL & branding options</span>
+                    <span>URL personnalisée et options de marque</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                    <span>Commission-free sales</span>
+                    <span>Visibilité sur les réseaux sociaux</span>
                   </li>
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full">
-                  <Link href="/coming-soon">Get Started</Link>
+                <Button className="w-full" asChild>
+                  <Link href="coming-soon">Commencer</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -244,25 +249,27 @@ export default function PricingPage() {
       <section className="py-12">
         <div className=" px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-8 text-center">
-            Compare Features
+            Comparer les Fonctionnalités
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full max-w-4xl mx-auto border-collapse">
               <thead>
                 <tr className="border-b">
-                  <th className="text-left py-4 px-4 font-medium">Feature</th>
-                  <th className="text-center py-4 px-4 font-medium">Basic</th>
-                  <th className="text-center py-4 px-4 font-medium">
-                    Professional
+                  <th className="text-left py-4 px-4 font-medium">
+                    Fonctionnalité
                   </th>
-                  <th className="text-center py-4 px-4 font-medium">Master</th>
+                  <th className="text-center py-4 px-4 font-medium">Basique</th>
+                  <th className="text-center py-4 px-4 font-medium">
+                    Professionnel
+                  </th>
+                  <th className="text-center py-4 px-4 font-medium">Maître</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b">
                   <td className="py-4 px-4">
                     <div className="flex items-center">
-                      <span>Portfolio Items</span>
+                      <span>Éléments de Portfolio</span>
                       <TooltipProvider>
                         <Tooltip>
                           <TooltipTrigger>
@@ -270,8 +277,8 @@ export default function PricingPage() {
                           </TooltipTrigger>
                           <TooltipContent>
                             <p className="w-60">
-                              Number of images, videos, and projects you can
-                              showcase in your portfolio
+                              Nombre d&apos;images, vidéos et projets que vous
+                              pouvez présenter dans votre portfolio
                             </p>
                           </TooltipContent>
                         </Tooltip>
@@ -280,32 +287,26 @@ export default function PricingPage() {
                   </td>
                   <td className="text-center py-4 px-4">10</td>
                   <td className="text-center py-4 px-4">50</td>
-                  <td className="text-center py-4 px-4">Unlimited</td>
+                  <td className="text-center py-4 px-4">Illimité</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-4 px-4">
                     <div className="flex items-center">
-                      <span>Commission Rate</span>
-                      <TooltipProvider>
-                        <Tooltip>
-                          <TooltipTrigger>
-                            <HelpCircle className="h-4 w-4 text-gray-400 ml-2" />
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="w-60">
-                              Percentage of each sale that goes to Handcrafted
-                            </p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
+                      <span>Visibilité sur les réseaux sociaux</span>
                     </div>
                   </td>
-                  <td className="text-center py-4 px-4">10%</td>
-                  <td className="text-center py-4 px-4">7%</td>
-                  <td className="text-center py-4 px-4">0%</td>
+                  <td className="text-center py-4 px-4">
+                    <X className="h-5 w-5 text-gray-300 mx-auto" />
+                  </td>
+                  <td className="text-center py-4 px-4">
+                    <X className="h-5 w-5 text-gray-300 mx-auto" />
+                  </td>
+                  <td className="text-center py-4 px-4">
+                    <Check className="h-5 w-5 text-green-500 mx-auto" />
+                  </td>
                 </tr>
                 <tr className="border-b">
-                  <td className="py-4 px-4">Featured Placement</td>
+                  <td className="py-4 px-4">Mise en Avant</td>
                   <td className="text-center py-4 px-4">
                     <X className="h-5 w-5 text-gray-300 mx-auto" />
                   </td>
@@ -317,13 +318,13 @@ export default function PricingPage() {
                   </td>
                 </tr>
                 <tr className="border-b">
-                  <td className="py-4 px-4">Workshop Listings</td>
+                  <td className="py-4 px-4">Annonces d&apos;Ateliers</td>
                   <td className="text-center py-4 px-4">2</td>
                   <td className="text-center py-4 px-4">10</td>
-                  <td className="text-center py-4 px-4">Unlimited</td>
+                  <td className="text-center py-4 px-4">Illimité</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="py-4 px-4">Custom URL</td>
+                  <td className="py-4 px-4">URL Personnalisée</td>
                   <td className="text-center py-4 px-4">
                     <X className="h-5 w-5 text-gray-300 mx-auto" />
                   </td>
@@ -335,21 +336,21 @@ export default function PricingPage() {
                   </td>
                 </tr>
                 <tr className="border-b">
-                  <td className="py-4 px-4">Analytics</td>
-                  <td className="text-center py-4 px-4">Basic</td>
-                  <td className="text-center py-4 px-4">Advanced</td>
-                  <td className="text-center py-4 px-4">Comprehensive</td>
+                  <td className="py-4 px-4">Analyses</td>
+                  <td className="text-center py-4 px-4">Basiques</td>
+                  <td className="text-center py-4 px-4">Avancées</td>
+                  <td className="text-center py-4 px-4">Complètes</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-4 px-4">Support</td>
                   <td className="text-center py-4 px-4">Email</td>
                   <td className="text-center py-4 px-4">
-                    Priority Email & Chat
+                    Email & Chat Prioritaires
                   </td>
-                  <td className="text-center py-4 px-4">Dedicated Manager</td>
+                  <td className="text-center py-4 px-4">Gestionnaire Dédié</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="py-4 px-4">Video Showcase</td>
+                  <td className="py-4 px-4">Présentation Vidéo</td>
                   <td className="text-center py-4 px-4">
                     <X className="h-5 w-5 text-gray-300 mx-auto" />
                   </td>
@@ -370,7 +371,7 @@ export default function PricingPage() {
       <section className="py-12 md:py-20">
         <div className=" px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-12 text-center">
-            What Our Artisans Say
+            Ce que Disent Nos Artisans
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-gray-50">
@@ -391,23 +392,23 @@ export default function PricingPage() {
                   ))}
                 </div>
                 <p className="italic mb-6">
-                  &ldquo;Since upgrading to the Professional plan, my visibility
-                  has increased dramatically. I&apos;m getting more inquiries
-                  and sales than ever before. The analytics help me understand
-                  what customers are looking for.&rdquo;
+                  &ldquo;Depuis que j&apos;ai opté pour le plan Professionnel,
+                  ma visibilité a considérablement augmenté. Je reçois plus de
+                  demandes et de ventes que jamais. Les analyses m&apos;aident à
+                  comprendre ce que recherchent les clients.&rdquo;
                 </p>
                 <div className="flex items-center">
                   <div className="h-10 w-10 rounded-full overflow-hidden relative mr-3">
                     <Image
                       src="/placeholder.svg?height=40&width=40"
-                      alt="Emma Thompson"
+                      alt="Amina Benali"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div>
-                    <h4 className="font-medium">Emma Thompson</h4>
-                    <p className="text-sm text-gray-500">Ceramic Artist</p>
+                    <h4 className="font-medium">Amina Benali</h4>
+                    <p className="text-sm text-gray-500">Artiste Céramiste</p>
                   </div>
                 </div>
               </CardContent>
@@ -431,23 +432,23 @@ export default function PricingPage() {
                   ))}
                 </div>
                 <p className="italic mb-6">
-                  &ldquo;The Master plan has been a game-changer for my
-                  woodworking business. The commission-free sales alone paid for
-                  the subscription in the first month. The dedicated account
-                  manager has been incredibly helpful.&rdquo;
+                  &ldquo;Le plan Maître a transformé mon entreprise de
+                  menuiserie. Les ventes sans commission ont à elles seules
+                  couvert l&apos;abonnement dès le premier mois. Le gestionnaire
+                  de compte dédié a été incroyablement utile.&rdquo;
                 </p>
                 <div className="flex items-center">
                   <div className="h-10 w-10 rounded-full overflow-hidden relative mr-3">
                     <Image
                       src="/placeholder.svg?height=40&width=40"
-                      alt="James Wilson"
+                      alt="Youssef Alami"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div>
-                    <h4 className="font-medium">James Wilson</h4>
-                    <p className="text-sm text-gray-500">Master Woodworker</p>
+                    <h4 className="font-medium">Youssef Alami</h4>
+                    <p className="text-sm text-gray-500">Maître Menuisier</p>
                   </div>
                 </div>
               </CardContent>
@@ -471,23 +472,24 @@ export default function PricingPage() {
                   ))}
                 </div>
                 <p className="italic mb-6">
-                  &ldquo;I started with the Basic plan when I was just beginning
-                  my jewelry business. As I grew, I upgraded to Professional.
-                  The platform has been instrumental in helping me build my
-                  brand and connect with customers.&rdquo;
+                  &ldquo;J&apos;ai commencé avec le plan Basique quand je
+                  débutais mon entreprise de bijoux. Au fur et à mesure de ma
+                  croissance, j&apos;ai évolué vers le plan Professionnel. La
+                  plateforme a été essentielle pour m&apos;aider à construire ma
+                  marque et à me connecter avec les clients.&rdquo;
                 </p>
                 <div className="flex items-center">
                   <div className="h-10 w-10 rounded-full overflow-hidden relative mr-3">
                     <Image
                       src="/placeholder.svg?height=40&width=40"
-                      alt="Sofia Martinez"
+                      alt="Nadia Tazi"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div>
-                    <h4 className="font-medium">Sofia Martinez</h4>
-                    <p className="text-sm text-gray-500">Jewelry Designer</p>
+                    <h4 className="font-medium">Nadia Tazi</h4>
+                    <p className="text-sm text-gray-500">Créatrice de Bijoux</p>
                   </div>
                 </div>
               </CardContent>
@@ -500,74 +502,69 @@ export default function PricingPage() {
       <section className="py-12 md:py-20">
         <div className=" px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-12 text-center">
-            Frequently Asked Questions
+            Questions Fréquemment Posées
           </h2>
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>
-                  Can I upgrade or downgrade my plan later?
+                  Puis-je changer de plan ultérieurement ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes, you can upgrade or downgrade your plan at any time. When
-                  upgrading, you&apos;ll be charged the prorated difference for
-                  the remainder of your billing cycle. When downgrading, the new
-                  rate will apply at the start of your next billing cycle.
+                  Oui, vous pouvez passer à un plan supérieur ou inférieur à
+                  tout moment. Lors d&apos;une mise à niveau, la différence au
+                  prorata sera facturée pour le reste de votre cycle de
+                  facturation. Lors d&apos;un passage à un plan inférieur, le
+                  nouveau tarif s&apos;appliquera au début de votre prochain
+                  cycle de facturation.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>
-                  Is there a free trial available?
+                  Y a-t-il un essai gratuit disponible ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes, we offer a 14-day free trial for all plans. You can
-                  explore all the features and benefits before committing to a
-                  subscription. No credit card is required to start your trial.
+                  Oui, nous proposons un plan gratuit basique. Vous pouvez
+                  explorer toutes les fonctionnalités et avantages avant de vous
+                  engager dans un abonnement. Aucune carte de crédit n&apos;est
+                  requise pour commencer votre essai.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>
-                  What payment methods do you accept?
+                  Quels modes de paiement acceptez-vous ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  We accept all major credit cards (Visa, Mastercard, American
-                  Express, Discover), PayPal, and bank transfers for annual
-                  plans. All payments are processed securely through our payment
-                  partners.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-4">
-                <AccordionTrigger>
-                  How does the commission structure work?
-                </AccordionTrigger>
-                <AccordionContent>
-                  For Basic plans, we charge a 10% commission on all sales made
-                  through the platform. Professional plans have a reduced rate
-                  of 7%, and Master plans enjoy commission-free sales.
-                  Commissions are automatically calculated and deducted when a
-                  customer makes a purchase.
+                  Nous acceptons toutes les principales cartes de crédit (Visa,
+                  Mastercard, American Express, Discover), PayPal et les
+                  virements bancaires pour les plans annuels. Tous les paiements
+                  sont traités en toute sécurité par nos partenaires de
+                  paiement.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>
-                  Can I cancel my subscription at any time?
+                  Puis-je annuler mon abonnement à tout moment ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes, you can cancel your subscription at any time from your
-                  account settings. If you cancel, you&apos;ll still have access
-                  to your plan features until the end of your current billing
-                  cycle. We don&apos;t offer refunds for partial months.
+                  Oui, vous pouvez annuler votre abonnement à tout moment depuis
+                  les paramètres de votre compte. Si vous annulez, vous aurez
+                  toujours accès aux fonctionnalités de votre plan jusqu&apos;à
+                  la fin de votre cycle de facturation en cours. Nous ne
+                  proposons pas de remboursements pour les mois partiels.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
                 <AccordionTrigger>
-                  Do you offer discounts for artisan collectives or studios?
+                  Proposez-vous des réductions pour les collectifs
+                  d&apos;artisans ou les ateliers ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes, we offer special pricing for artisan collectives, studios
-                  with multiple craftspeople, and educational institutions.
-                  Please contact our sales team at sales@herfa.ma to discuss
-                  your specific needs and get a custom quote.
+                  Oui, nous proposons des tarifs spéciaux pour les collectifs
+                  d&apos;artisans, les ateliers avec plusieurs artisans et les
+                  établissements d&apos;enseignement. Veuillez contacter notre
+                  équipe commerciale à sales@herfa.ma pour discuter de vos
+                  besoins spécifiques et obtenir un devis personnalisé.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
