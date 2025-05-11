@@ -127,7 +127,7 @@ export default function IdeasPage() {
                 ))}
               </div>
               <div className="flex justify-center">
-                <Button variant="outline">Charger plus d'idées</Button>
+                <Button variant="outline">Charger plus d&apos;idées</Button>
               </div>
             </TabsContent>
             <TabsContent value="new">
