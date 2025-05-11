@@ -23,6 +23,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Link from "next/link";
 
 export default function PricingPage() {
   return (
@@ -116,7 +117,9 @@ export default function PricingPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full">Get Started</Button>
+                <Button className="w-full" asChild>
+                  <Link href="/coming-soon">Get Started</Link>
+                </Button>
               </CardFooter>
             </Card>
 
@@ -172,7 +175,9 @@ export default function PricingPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full">Get Started</Button>
+                <Button asChild className="w-full">
+                  <Link href="/coming-soon">Get Started</Link>
+                </Button>
               </CardFooter>
             </Card>
 
@@ -225,7 +230,9 @@ export default function PricingPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full">Get Started</Button>
+                <Button asChild className="w-full">
+                  <Link href="/coming-soon">Get Started</Link>
+                </Button>
               </CardFooter>
             </Card>
           </div>

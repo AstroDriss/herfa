@@ -11,10 +11,10 @@ export default function IdeasPage() {
       {/* Hero Section */}
       <section className="relative h-[400px] w-full">
         <Image
-          src="/placeholder.svg?height=800&width=1600"
+          src="/images/ideas/cover.jpg"
           alt="Handcrafted items showcase"
           fill
-          className="object-cover brightness-75"
+          className="object-cover brightness-75 rounded-2xl"
           priority
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
@@ -60,7 +60,7 @@ export default function IdeasPage() {
       </section>
 
       {/* Featured Ideas */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12">
         <div className=" px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-8">Featured Ideas</h2>
           <Tabs defaultValue="popular" className="w-full">
@@ -161,42 +161,42 @@ const categories = [
   {
     name: "Woodworking",
     slug: "woodworking",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/ideas/wood.jpg",
   },
   {
     name: "Ceramics & Pottery",
     slug: "ceramics-pottery",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/ideas/ceramics.jpg",
   },
   {
     name: "Textiles & Fiber Arts",
     slug: "textiles-fiber",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/ideas/textiles.jpg",
   },
   {
     name: "Metalwork",
     slug: "metalwork",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/ideas/metal.jpg",
   },
   {
     name: "Leathercraft",
     slug: "leathercraft",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/ideas/leathercraft.jpg",
   },
   {
     name: "Jewelry Making",
     slug: "jewelry",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/ideas/jewelry.jpg",
   },
   {
     name: "Glass Art",
     slug: "glass-art",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/ideas/glass-art.jpg",
   },
   {
     name: "Paper Crafts",
     slug: "paper-crafts",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/ideas/paper.jpg",
   },
 ];
 
@@ -205,48 +205,48 @@ const featuredIdeas = [
     id: "1",
     title: "Handcrafted Oak Dining Table",
     category: "Woodworking",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/ideas/table.jpeg",
     artisanName: "Thomas Woodcraft",
-    artisanImage: "/placeholder.svg?height=100&width=100",
+    artisanImage: "/images/profiles/man.jpg",
   },
   {
     id: "2",
     title: "Ceramic Dinner Set with Glazed Finish",
     category: "Ceramics & Pottery",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/ideas/ceramic-set.jpg",
     artisanName: "Clay Creations",
-    artisanImage: "/placeholder.svg?height=100&width=100",
+    artisanImage: "/images/profiles/clay.png",
   },
   {
     id: "3",
     title: "Hand-woven Wool Tapestry",
     category: "Textiles & Fiber Arts",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/ideas/wool-tapestry.jpg",
     artisanName: "Fiber & Thread",
-    artisanImage: "/placeholder.svg?height=100&width=100",
+    artisanImage: "/images/profiles/fiber.jpeg",
   },
   {
     id: "4",
     title: "Forged Iron Wall Sconce",
     category: "Metalwork",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/ideas/wall-sconce.jpg",
     artisanName: "Metal Masters",
-    artisanImage: "/placeholder.svg?height=100&width=100",
+    artisanImage: "/images/profiles/metal.png",
   },
   {
     id: "5",
     title: "Handstitched Leather Journal",
     category: "Leathercraft",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/ideas/handstitched-journal.jpg",
     artisanName: "Leather & Stitch",
-    artisanImage: "/placeholder.svg?height=100&width=100",
+    artisanImage: "/images/profiles/leather.png",
   },
   {
     id: "6",
     title: "Blown Glass Pendant Light",
     category: "Glass Art",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/ideas/pendant-light.jpg",
     artisanName: "Glass Works Studio",
-    artisanImage: "/placeholder.svg?height=100&width=100",
+    artisanImage: "/images/profiles/glass-works.png",
   },
 ];
