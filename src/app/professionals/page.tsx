@@ -61,7 +61,7 @@ export default function ProfessionalsPage() {
           <div className="space-y-6">
             <div>
               <h3 className="font-semibold text-lg mb-4">
-                Catégories d'Artisanat
+                Catégories d&apos;Artisanat
               </h3>
               <div className="space-y-2">
                 {professionalCategories.map((category) => (
@@ -86,7 +86,7 @@ export default function ProfessionalsPage() {
                   <SelectValue placeholder="Sélectionnez un emplacement" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="anywhere">N'importe où</SelectItem>
+                  <SelectItem value="anywhere">N&apos;importe où</SelectItem>
                   <SelectItem value="local">Dans un rayon de 80 km</SelectItem>
                   <SelectItem value="national">National</SelectItem>
                   <SelectItem value="international">International</SelectItem>
@@ -96,7 +96,7 @@ export default function ProfessionalsPage() {
 
             <div>
               <h3 className="font-semibold text-lg mb-4">
-                Niveau d'Expérience
+                Niveau d&apos;Expérience
               </h3>
               <div className="space-y-2">
                 <div className="flex items-center">
@@ -228,7 +228,7 @@ export default function ProfessionalsPage() {
                   <SelectContent>
                     <SelectItem value="recommended">Recommandé</SelectItem>
                     <SelectItem value="rating">Note la plus élevée</SelectItem>
-                    <SelectItem value="reviews">Le plus d'avis</SelectItem>
+                    <SelectItem value="reviews">Le plus d&apos;avis</SelectItem>
                     <SelectItem value="newest">Le plus récent</SelectItem>
                   </SelectContent>
                 </Select>
@@ -373,8 +373,8 @@ export default function ProfessionalsPage() {
               Êtes-vous un Artisan Qualifié ?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Rejoignez notre communauté d'artisans et connectez-vous avec des
-              clients qui apprécient la qualité artisanale.
+              Rejoignez notre communauté d&apos;artisans et connectez-vous avec
+              des clients qui apprécient la qualité artisanale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" size="lg" asChild>

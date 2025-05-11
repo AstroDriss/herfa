@@ -33,19 +33,20 @@ export default function PricingPage() {
         <div className="px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Pricing Plans for Artisans
+              Formules tarifaires pour les artisans
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Choose the perfect plan to showcase your craft and connect with
-              customers who appreciate handmade quality
+              Choisissez la formule idéale pour mettre en valeur votre
+              savoir-faire et entrer en contact avec des clients qui apprécient
+              la qualité artisanale
             </p>
             <Tabs defaultValue="monthly" className="w-full max-w-md mx-auto">
               <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="monthly">Monthly</TabsTrigger>
+                <TabsTrigger value="monthly">Mensuel</TabsTrigger>
                 <TabsTrigger value="annually">
-                  Annually{" "}
+                  Annuel{" "}
                   <Badge className="ml-2 bg-green-100 text-green-800 hover:bg-green-100">
-                    Save 20%
+                    Économisez 20%
                   </Badge>
                 </TabsTrigger>
               </TabsList>
