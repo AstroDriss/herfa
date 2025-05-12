@@ -1018,10 +1018,7 @@ export default function InscriptionProfessionnelPage() {
                                       <Check className="mr-2 h-4 w-4 text-green-500" />
                                       <span>Jusqu&apos;à 10 photos</span>
                                     </li>
-                                    <li className="flex items-center">
-                                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                                      <span>Commission de 10%</span>
-                                    </li>
+                                    
                                   </ul>
                                 </Label>
                               </FormItem>
@@ -1067,10 +1064,7 @@ export default function InscriptionProfessionnelPage() {
                                       <Check className="mr-2 h-4 w-4 text-green-500" />
                                       <span>Jusqu&apos;à 50 photos</span>
                                     </li>
-                                    <li className="flex items-center">
-                                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                                      <span>Commission de 7%</span>
-                                    </li>
+                                    
                                     <li className="flex items-center">
                                       <Check className="mr-2 h-4 w-4 text-green-500" />
                                       <span>Mise en avant catégories</span>
@@ -1116,10 +1110,6 @@ export default function InscriptionProfessionnelPage() {
                                     <li className="flex items-center">
                                       <Check className="mr-2 h-4 w-4 text-green-500" />
                                       <span>Photos illimitées</span>
-                                    </li>
-                                    <li className="flex items-center">
-                                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                                      <span>0% de commission</span>
                                     </li>
                                     <li className="flex items-center">
                                       <Check className="mr-2 h-4 w-4 text-green-500" />
@@ -1200,10 +1190,7 @@ export default function InscriptionProfessionnelPage() {
                           </p>
                         </div>
                       </div>
-                      <div className="text-sm text-gray-600">
-                        <p>Essai gratuit de 14 jours</p>
-                        <p>Annulation possible à tout moment</p>
-                      </div>
+                      
                     </div>
 
                     <div className="space-y-4">
