@@ -2,6 +2,7 @@ import comingSoon from "@/assets/coming-soon.jpg";
 import { Button } from "@/components/ui/button";
 import { Home } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const ComingSoonPage = () => {
   return (
@@ -13,8 +14,10 @@ const ComingSoonPage = () => {
         <p className="text-2xl">
           L&apos;artisant traditionnel marocain à portée de clic.
         </p>
-        <Button>
+        <Button asChild>
+          <Link href="/">
           Accueil <Home />
+          </Link>
         </Button>
       </div>
       <Image src={comingSoon} alt="a man crafting" />
