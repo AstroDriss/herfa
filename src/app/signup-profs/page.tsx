@@ -52,59 +52,55 @@ import { Badge } from "@/components/ui/badge";
 const personalInfoSchema = z.object({
   prenom: z
     .string()
-    .min(2, { message: "Le prénom doit contenir au moins 2 caractères" }).optional(),
+    .optional(),
   nom: z
     .string()
-    .min(2, { message: "Le nom doit contenir au moins 2 caractères" }).optional(),
+    .optional(),
   email: z
     .string()
-    .email({ message: "Veuillez entrer une adresse email valide" }).optional(),
+    .optional(),
   telephone: z
     .string()
-    .min(8, { message: "Veuillez entrer un numéro de téléphone valide" }).optional(),
-  nomEntreprise: z.string().optional().optional(),
-  ville: z.string().min(2, { message: "Veuillez entrer une ville valide" }).optional(),
-  adresse: z.string().min(5, { message: "Veuillez entrer une adresse valide" }).optional() ,
+    .optional(),
+  nomEntreprise: z.string().optional(),
+  ville: z.string().optional(),
+  adresse: z.string().optional() ,
 });
 
 // Schéma de validation pour l&apos;étape 2
 const craftInfoSchema = z.object({
   categorie: z
     .string()
-    .min(1, { message: "Veuillez sélectionner une catégorie" }).optional(),
+    .optional(),
   specialites: z
     .array(z.string())
-    .min(1, { message: "Veuillez sélectionner au moins une spécialité" }).optional(),
-  description: z.string().min(50, {
-    message: "La description doit contenir au moins 50 caractères",
-  }).optional(),
-  experience: z.string().min(1, {
-    message: "Veuillez sélectionner votre niveau d&apos;expérience",
-  }).optional(),
+    .optional(),
+  description: z.string().optional(),
+  experience: z.string().optional(),
   services: z
     .array(z.string())
-    .min(1, { message: "Veuillez sélectionner au moins un service" }).optional(),
+    .optional(),
 });
 
 // Schéma de validation pour l&apos;étape 3
 const portfolioSchema = z.object({
   photoProfil: z
     .string()
-    .min(1, { message: "Veuillez télécharger une photo de profil" }).optional(),
+    .optional(),
   photoCouverture: z
     .string()
-    .min(1, { message: "Veuillez télécharger une photo de couverture" }).optional(),
+    .optional(),
   portfolioImages: z
     .array(z.string())
-    .min(3, { message: "Veuillez télécharger au moins 3 images de portfolio" }).optional(),
+    .optional(),
 });
 
 // Schéma de validation pour l&apos;étape 4
 const planSchema = z.object({
-  plan: z.string().min(1, { message: "Veuillez sélectionner un plan" }),
+  plan: z.string().optional(),
   facturation: z
     .string()
-    .min(1, { message: "Veuillez sélectionner une option de facturation" }).optional(),
+    .optional(),
 });
 
 // Schéma de validation pour l&apos;étape 5
