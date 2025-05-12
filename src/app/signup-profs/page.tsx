@@ -12,7 +12,6 @@ import {
   ChevronRight,
   Upload,
   CreditCard,
-  Info,
   ArrowLeft,
   ArrowRight,
   X,
@@ -79,11 +78,9 @@ const craftInfoSchema = z.object({
   description: z.string().min(50, {
     message: "La description doit contenir au moins 50 caractères",
   }),
-  experience: z
-    .string()
-    .min(1, {
-      message: "Veuillez sélectionner votre niveau d&apos;expérience",
-    }),
+  experience: z.string().min(1, {
+    message: "Veuillez sélectionner votre niveau d&apos;expérience",
+  }),
   services: z
     .array(z.string())
     .min(1, { message: "Veuillez sélectionner au moins un service" }),
